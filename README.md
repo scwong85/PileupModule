@@ -26,7 +26,7 @@ Output
 ------
 Output is a column delimited file
 
-    SCAFFOLD_ID	POSITION	BASE*	DEPTH	BASECOUNT(A C G T)***
+    SCAFFOLD_ID	POSITION	BASE*	DEPTH	BASECOUNT(A C G T)**
 
-#*Top 2 most common bases will be encapsulated in []
-#**Repetition of A, C, G, T base count for N individuals from pileup file
+    *Top 2 most common bases will be encapsulated in []
+    **Repetition of A, C, G, T base count for N individuals from pileup file
