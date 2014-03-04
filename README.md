@@ -21,6 +21,11 @@ After installation, type:
     from pileupmodule import ParsePileup
     p = ParsePileup()
     p.run(argument)
+    
+    #arg1 = inputfile
+    #arg2 = outputfile
+    #arg3 = depth threshold, integer
+    #arg4 = quality threshold, integer
 
 Output
 ------
