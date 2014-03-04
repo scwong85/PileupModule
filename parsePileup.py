@@ -17,11 +17,11 @@ class ParsePileup:
 	qualityThreshold = ''
 
 	#initialize
-	def __init__(self):
-		self.infile = sys.argv[1]
-		self.outfile = sys.argv[2]
-		self.depthThreshold = int(sys.argv[3])
-		self.qualityThreshold = int(sys.argv[4])
+	def __init__(self, infile, outfile, dt, qt):
+		self.infile = infile
+		self.outfile = outfile
+		self.depthThreshold = int(dt)
+		self.qualityThreshold = int(qt)
 
 	#return dictionary of key A,C,G,T,N	sorted ascendingly by base count
 	def getMostCommonBase(self, mylist):	
@@ -168,5 +168,5 @@ class ParsePileup:
 		self.readfile()
 		
 		
-pp = ParsePileup()
+pp = ParsePileup(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4])
 pp.run()
